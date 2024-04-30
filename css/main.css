@@ -7,77 +7,118 @@ body{
 }
 
 
-
 nav{
     width: 100%;
     height: 90px;
-    background-color: white;
-    display: flex;
-   
-   
-}
-
-#navegação1{
-    height: 90px;
-    width: 500px;
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: white;
 }
 
-#nav{
-    width: 100%;
+#nav-conteudo{
+    background-color: white;
+    width: 334px;
     height: 90px;
-    display: flex;
    
 }
 
 #logo{
-    width: 370px;
-    height: 90px;
+    width: 334px;
+    height: 100%;
     display: flex;
-    justify-content: center;
-    
+    align-items: center;
 }
 
-nav img{
-    width: 196px;
+#logo img{
+    width:200px;
     height: 85px;
+    cursor: pointer;
+    
 }
 
 #navegação{
     display: flex;
-    height: 15px;
-    font-size: 14px;
-    font-weight: bold;
-    gap: 13px;
-   
-    
+    width: 805px;
+    height: 50px;
+    background-color: white;
 }
 
-#navegação p:hover{
+#conteudo{
+    width: 534px;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.menu{
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+    letter-spacing: 1.5px;
+    font-weight: 600;
+    font-size: 15px;
+    color: #000;
+    margin: 0px;
+    align-items: center;
+}
+
+.menu li:hover {
     cursor: pointer;
     color: red;
 }
 
-#contato{
-    width: 160px;
-}
-
-#cont{
-    height: 90px;
+#social{
     width: 200px;
+    height: 50px;
     display: flex;
-    justify-content: center;
     align-items: center;
 }
 
-#contato{
+#redes{
     display: flex;
-
+    width: 200px;
+    justify-content: space-evenly;
 }
 
-#contato img{
-    width: 20px;
-    height: 20px;
+#redes:hover{
+    cursor: pointer;
+}
+
+#pesquisa{
+    display: flex;
+    align-items: center;
+}
+
+#pesquisa:hover{
+    cursor: pointer;
+}
+
+
+
+
+.carrousel{
+    width: 100%;
+    height: 350px;
+    background-color: aqua;
+}
+
+.item{
+    width: 100%;
+    height: 300px;
+    background-color: white;
+    display: flex;
+}
+
+.item-imagem {
+    width: 25%;
+    height: 350px;
+   
+}
+
+.item-imagem img{
+    width: 100%;
+    height: 350px;
 }
