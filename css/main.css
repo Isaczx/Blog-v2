@@ -123,35 +123,21 @@ nav{
     width: 100%;
     height: 350px;
     background-color: aqua;
+    display: flex;
 }
 
-.item{
+.carousel-inner{
     width: 100%;
-    height: 300px;
-    background-color: white;
-    display: flex;
 }
 
-.item-imagem {
-    width: 25%;
-    height: 350px;
-   
+#carouselExample{
+    width: 25%
 }
 
-.item-imagem img{
+.carousel-inner img{
     width: 100%;
-    height: 350px;
-    object-fit: cover;
-}
-
-.carousel-item{
-    width: 1440px;
-    display: flex;
-
-}
-
-.carousel-item active{
-    display: flex;
+    height: 400px;
+    object-fit: cover
 }
 
 
