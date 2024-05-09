@@ -270,4 +270,9 @@ nav{
     .carousel-inner img{
         height: 350px;
     }
+
+    .carousel-control-next, .carousel-control-prev{
+        top: -35px;
+
+    }
 }
