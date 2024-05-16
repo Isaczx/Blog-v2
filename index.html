@@ -27,7 +27,7 @@
                    
                 </ul>
 
-                <div class="hamburguer" >
+                <div class="hamburguer" id="fechado">
                   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-justify" viewBox="0 0 16 16">
                     <path fill-rule="evenodd" d="M2 12.5a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5m0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5m0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5m0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5"/>
                   </svg>
@@ -49,6 +49,8 @@
                 </div>
             </div>
        </div>
+
+       
     </nav>
 
     <main>
@@ -56,7 +58,7 @@
     <div class="carrouse2s">
       <div id="botaoleft">
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev" id="bt">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="carousel-control-prev-icon"  id="botao" aria-hidden="true"></span>
           <span class="visually-hidden">Previous</span>
         </button>
       </div>
@@ -71,7 +73,7 @@
 
             <div class="titulo">
               <div class="T">
-                <p >SUMMER</p>
+                <p id="pu">SUMMER</p>
               </div>
               <p id="pa">Delicious Egg Dish with Corn Starch</p>
             </div>
@@ -106,14 +108,14 @@
             
         <div id="botaoright">
           <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next" id="bt">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="carousel-control-next-icon"  id="botao" aria-hidden="true"></span>
             <span class="visually-hidden">Next</span>
           </button>
         </div>    
           
     </div>   
     </main>
-    
+    <script src="javascript/nav.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
