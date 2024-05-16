@@ -1,12 +1,15 @@
 const menu = document.querySelector(".hamburguer");
+const listaMobile = document.querySelector("#conteudo-mobile");
 console.log(menu);
 
 menu.addEventListener("click" ,() =>{
 
     if (menu.id === "fechado") {
-        menu.id = "aberto"
+        menu.id = "aberto";
+        listaMobile.style.display = "flex";
     }else if(menu.id === "aberto"){
-        menu.id = "fechado"
+        menu.id = "fechado";
+        listaMobile.style.display = "none";
     }
 })
 
