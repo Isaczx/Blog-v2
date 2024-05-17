@@ -221,7 +221,7 @@ nav{
     top: 0;
     left: 0;
     width: 100%;
-   z-index: 10000;
+    z-index: 10000;
 }
 
 .menu-fixedL{
@@ -239,11 +239,43 @@ nav{
     background-color: #fff;
     list-style: none;
     width: 100%;
+    height: 30px;
     justify-content: space-around;
     font-weight: 600;
     transition: opacity 0.3s ease;
     opacity: 0;
 }
+
+#pesquisa-input {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    margin: 20px; /* Espaçamento ao redor do contêiner */
+}
+
+#pesquisa-input input[type="text"] {
+    width: 100%;
+    max-width: 400px; /* Largura máxima */
+    padding: 10px 15px; /* Espaçamento interno */
+    font-size: 16px; /* Tamanho da fonte */
+    border: 2px solid #e0e0e0; /* Cor da borda */
+    border-radius: 25px; /* Bordas arredondadas */
+    background-color: #ffffff; /* Fundo branco */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra leve */
+    outline: none; /* Remove o contorno padrão */
+    transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Transições suaves */
+}
+
+#pesquisa-input input[type="text"]:focus {
+    border-color: #FC4544; /* Cor da borda ao focar */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra mais pronunciada ao focar */
+}
+
+#pesquisa-input input[type="text"]::placeholder {
+    color: #a9a9a9; /* Cor do texto do placeholder */
+    font-style: italic; /* Estilo do placeholder */
+}
+
 
 
 @media only screen and (max-width: 1100px) {

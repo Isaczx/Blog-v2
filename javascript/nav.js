@@ -1,6 +1,8 @@
 const menu = document.querySelector(".hamburguer");
 const listaMobile = document.querySelector("#conteudo-mobile");
-console.log(menu);
+const lupa = document.querySelector("#pesquisa");
+const inputL = document.querySelector("#pesquisa-input");
+const redes = document.querySelector("#redes");
 
 menu.addEventListener("click" ,() =>{
 
@@ -9,7 +11,7 @@ menu.addEventListener("click" ,() =>{
         listaMobile.style.display = "flex";
         setTimeout(() => {
             listaMobile.style.opacity = "1";
-        }, 25);
+        }, 50);
     }else{
         menu.id = "fechado";
         listaMobile.style.opacity = "0";
@@ -32,3 +34,16 @@ window.addEventListener('scroll', function() {
         listaMobile.classList.remove('menu-fixedL');
     }
 });
+
+lupa.addEventListener("click", ()=>{
+    if(inputL.className === "fechado"){
+        inputL.style.display = "flex";
+        redes.style.display = "none";
+        inputL.className = "aberto";
+    }else{
+        inputL.style.display = "none";
+        redes.style.display = "flex";
+        inputL.className = "fechado";
+    }
+   
+})
