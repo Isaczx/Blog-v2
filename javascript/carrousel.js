@@ -7,7 +7,7 @@ var splide = new Splide( '.splide', {
           perPage: 3,
       },
       768: {
-          perPage: 2,
+          perPage: 3,
       },
       480: {
           perPage: 1,
