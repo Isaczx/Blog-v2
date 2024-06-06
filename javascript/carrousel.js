@@ -44,13 +44,16 @@ function datas() {
       var titulo = item.querySelector(".titulo");
       // Seleciona o elemento #data dentro do item atual
       var data = item.querySelector("#data");
+      var borda = item.querySelector(".borda");
 
       // Adiciona evento de clique ao item atual
       item.addEventListener("mouseenter", () => {
           if (data) {
               data.style.display = "block";
               titulo.style.top = "65%";
-              console.log("Item clicked");
+              borda.style.width = "97%";
+             
+              borda.style.opacity = "1";
           }
 
           
@@ -60,7 +63,11 @@ function datas() {
         if (data) {
             data.style.display = "none";
             titulo.style.top = "70%";
-            console.log("Item clicked");
+
+            borda.style.opacity = "0";
+            borda.style.width = "0%";
+           
+          
         }
 
         

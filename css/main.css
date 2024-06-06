@@ -186,7 +186,21 @@ nav{
 
 /* Estilos para os slides */
 .carrousel{
+    position: relative; /* Garante que a posição seja relativa para elementos filhos */
+}
 
+.borda{
+    width: 0%;
+    height: 97%;
+    border: 0.1px solid white;
+    z-index: 1000;
+    position: absolute;
+    top: 50%; /* Posiciona a div no centro vertical */
+    left: 50%; /* Posiciona a div no centro horizontal */
+    transform: translate(-50%, -50%); /* Centraliza a div */
+    opacity: 0;
+    transition: width 0.5s ease, opacity 0.5s ease;
+    
 }
 
 #e {
