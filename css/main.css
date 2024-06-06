@@ -394,3 +394,10 @@ nav{
 
     
 }
+
+@media only screen and (min-width: 370px) {
+    .splide__arrow--next {
+        left: 23rem;
+    }
+
+}
