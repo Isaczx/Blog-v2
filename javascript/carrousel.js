@@ -2,6 +2,17 @@ var splide = new Splide( '.splide', {
     type   : 'loop',
     perPage: 4,
     perMove: 1,
+    breakpoints: {
+      1200: {
+          perPage: 3,
+      },
+      768: {
+          perPage: 2,
+      },
+      480: {
+          perPage: 1,
+      },
+    }
   } );
   
   splide.mount();
