@@ -190,7 +190,7 @@ nav{
 }
 
 .borda{
-    width: 0%;
+    width: 95%;
     height: 97%;
     border: 0.1px solid white;
     z-index: 1000;

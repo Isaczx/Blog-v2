@@ -65,7 +65,7 @@ function datas() {
             titulo.style.top = "70%";
 
             borda.style.opacity = "0";
-            borda.style.width = "0%";
+            borda.style.width = "95%";
            
           
         }
