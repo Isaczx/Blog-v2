@@ -50,7 +50,7 @@ nav{
 
 #navegação{
     display: flex;
-    width: 70%;
+    width: 100%;
     height: 50px;
     background-color: white;
 }
@@ -281,7 +281,7 @@ nav{
 .splide__arrow--next{
     z-index: 10000;
     position: absolute;
-    left: 95vw;
+    left: 94vw;
     border-radius: 100px;
    
 }
@@ -307,6 +307,85 @@ nav{
     display: none;
 }
 
+.categoria{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    flex-direction: row;
+    margin: 50px 0px 50px 0px;
+    align-items: center;
+    justify-content: center;
+   
+}
+
+.categorias{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    flex-wrap: wrap;
+    width: 90%;
+    justify-content: center;
+    
+}
+
+.categoriaItem{
+    width: 112px;
+    height: 142px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+    color: #333333;
+    text-transform: uppercase;
+    font-family: "Playfair Display", serif;
+    font-size: small;
+   
+    
+}
+
+.categoriaItem:hover{
+    cursor: pointer;
+    color: red;
+   
+}
+
+
+.categoriaItem img{
+    border-radius: 100%;
+    transition: transform 0.2s cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+
+.animated-text {
+   
+   
+    position: relative;
+    display: inline-block;
+    padding-bottom: 5px; /* Espaço para a linha */
+    display: flex;
+    justify-content: center;
+}
+
+.animated-text::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 0;
+    height: 1px;
+    background-color: red;
+    transition: width 0.3s ease-out;
+    transform: translateX(-50%);
+}
+
+.categoriaItem:hover .animated-text::after {
+    width: 100%;
+}
+
+.categoriaItem p {
+    display: inline-block;
+    margin: 0;
+}
+
 @media only screen and (max-width: 1100px) {
     #conteudo{
         width: 471px;
@@ -318,6 +397,15 @@ nav{
 
     #pesquisa img {
         width: 16px;
+    }
+
+    .categoria{
+        margin: 100px 0px 50px 0px;
+    }
+
+    .categorias {
+        height: 330px;
+        width: 65%;
     }
 }
 
@@ -333,24 +421,36 @@ nav{
         z-index: 10;
     }
 
-    .carousel-inner a{
+    .menu{
         display: none;
     }
 
-   .quatro{
-    display: none;
-   }
+    .hamburguer{
+        display: flex;
+        align-items: center;
+    }
 
-   .um,.dois,.tres{
-    width: 1/3;
-   }
+    .hamburguer svg{
+        display: flex;
+        align-items: center;
+        width: 40px;
+        height: 20px;
+    }
+
+    .hamburguer h1{
+        font-family: "Playfair Display", serif;
+        text-transform: uppercase;
+        font-size: 18px;
+        margin: 0;
+        font-weight: bold;
+    }
 
    .splide__arrow--next{
-    
     left: 93vw;
-  
-   
-}
+   }
+    .categorias {
+        width: 71%;
+    }
   
 }
 
@@ -427,7 +527,9 @@ nav{
 
 }
 
-@media only screen and (max-width: 470px) {
+@media only screen and (max-width: 321px) {
    
-
+    .categorias {
+        width: 80%;
+    }
 }

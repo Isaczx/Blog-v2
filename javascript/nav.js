@@ -3,6 +3,8 @@ const listaMobile = document.querySelector("#conteudo-mobile");
 const lupa = document.querySelector("#pesquisa");
 const inputL = document.querySelector("#pesquisa-input");
 const redes = document.querySelector("#redes");
+const nav = document.querySelector("#nav");
+const social = document.querySelector("#social");
 
 menu.addEventListener("click" ,() =>{
 
@@ -47,3 +49,22 @@ lupa.addEventListener("click", ()=>{
     }
    
 })
+
+
+function handleIntersection(entries, observer) {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            social.style.marginLeft  = "50px";
+          
+        } else {
+            social.style.marginLeft  = "35%";
+  
+        }
+    });
+}
+
+// Cria uma instância do IntersectionObserver
+var observer = new IntersectionObserver(handleIntersection, { threshold: 0.1 });
+
+// Observa o elemento de carrossel
+observer.observe(nav);
