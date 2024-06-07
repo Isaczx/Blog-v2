@@ -192,7 +192,7 @@ nav{
 .borda{
     width: 95%;
     height: 97%;
-    border: 0.1px solid white;
+    border: 1px solid white;
     z-index: 1000;
     position: absolute;
     top: 50%; /* Posiciona a div no centro vertical */
