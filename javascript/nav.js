@@ -57,7 +57,7 @@ function handleIntersection(entries, observer) {
             social.style.marginLeft  = "50px";
           
         } else {
-            social.style.marginLeft  = "35%";
+            social.style.marginLeft  = "30%";
   
         }
     });
