@@ -1,292 +1,448 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Blog</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel='stylesheet' type='text/css' media='screen' href='libs/splide-4.1.3/dist/css/splide-core.min.css'>
-    <link rel='stylesheet' type='text/css' media='screen' href='css/main.css'>
+  <meta charset='utf-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <title>Blog</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel='stylesheet' type='text/css' media='screen' href='libs/splide-4.1.3/dist/css/splide-core.min.css'>
+  <link rel='stylesheet' type='text/css' media='screen' href='css/main.css'>
 </head>
+
 <body>
-    <nav id="nav">
-       <div id="nav-conteudo">
-            <div id="logo">
-                <img src="img/logo.png" alt="logo">
-            </div>
-       </div>
-
-       <div id="navegação">
-            <div id="conteudo">
-                <ul class="menu">
-                    <li> Home</li>
-                    <li> Download</li>
-                    <li> Social</li>
-                    <li> Conteúdo</li>
-                </ul>
-
-                <div class="hamburguer" id="fechado">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-justify" viewBox="0 0 16 16">
-                    <path fill-rule="evenodd" d="M2 12.5a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5m0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5m0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5m0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5"/>
-                  </svg>
-                  <h1>menu</h1>
-                </div>
-            </div>
-
-            <div id="social">
-                <div id="redes">
-                    <img src="img/twitter.svg" alt="">
-                    <img src="img/facebook.svg" alt="">
-                    <img src="img/tiktok.svg" alt="">
-                    <img src="img/instagram.svg" alt="">
-                    <img src="img/youtube.svg" alt="">
-                </div>
-
-                <div id="pesquisa-input" class="fechado">
-                  <input type="text">
-                </div>
-
-                <div id="pesquisa">
-                    <img src="img/search.svg" alt="">
-                </div>
-            </div>
-       </div>
-    </nav>
-    <div id="conteudo-mobile">
-      <li> Home</li>
-      <li> Download</li>
-      <li> Social</li>
-      <li> Conteúdo</li>
-    </div>
-    <main>
-      <div class="C">
-        <section class="splide" aria-label="Exemplo de HTML básico do Split">
-          <div class="splide__track">
-            <ul class="splide__list" id="e">
-
-              <li class="splide__slide">
-                <div  class="carrousel"> 
-                  <div class="borda"></div>
-                  <img src="img/carrousel/item1.jpg" alt="">
-                  <div class="titulo">
-                    <div class="T">
-                      <p id="pu">SUMMER</p>
-                    </div>
-                    <p id="pa">Delicious Egg Dish with Corn Starch</p>
-                    <div id="data">
-                      <p>—— MARCH 28, 2024 ——</p>
-                    </div>
-                  </div>
-                </div>
-              </li>
-
-              <li class="splide__slide">
-                <div class="carrousel"> 
-                  <div class="borda"></div>
-                  <img src="img/carrousel/item2.jpg" alt="">
-                  <div class="titulo">
-                    <div class="T">
-                      <p id="pu">Super Healthy</p>
-                    </div>
-                    <p id="pa">Lentil Salad with Fried Cheese</p>
-                    <div id="data">
-                      <p>—— MARCH 28, 2024 ——</p>
-                    </div>
-                  
-                  </div>
-                </div>
-              </li>
-
-              <li class="splide__slide">
-                <div  class="carrousel"> 
-                  <div class="borda"></div>
-                  <img src="img/carrousel/item3.jpg" alt="">
-                  <div class="titulo">
-                    <div class="T">
-                      <p id="pu">Vegetable</p>
-                    </div>
-                    <p id="pa">Pickled Summer Vegetables Greenish</p>
-                    <div id="data">
-                      <p>—— MARCH 28, 2024 ——</p>
-                    </div>
-                  </div>
-                </div>
-              </li>
-
-              <li class="splide__slide">
-                <div  class="carrousel">
-                  <div class="borda"></div> 
-                  <img src="img/carrousel/item4.jpg" alt="">
-                  <div class="titulo">
-                    <div class="T">
-                      <p id="pu">Vegetable</p>
-                    </div>
-                    <p id="pa">Flat Irons Skillet Potatoes Dish</p>
-                    <div id="data">
-                      <p>—— MARCH 28, 2024 ——</p>
-                    </div>
-                  </div>
-                </div>
-              </li>
-
-                <li class="splide__slide">
-                <div  class="carrousel">
-                  <div class="borda"></div> 
-                  <img src="img/carrousel/item5.jpg" alt="">
-                  <div class="titulo">
-                    <div class="T">
-                      <p id="pu">SUMMER</p>
-                    </div>
-                    <p id="pa">Kouign-Amann French Pastries</p>
-                    <div id="data">
-                      <p>—— MARCH 28, 2024 ——</p>
-                    </div>
-                  </div>
-                </div>
-              </li>
-
-                <li class="splide__slide">
-                <div  class="carrousel">
-                  <div class="borda"></div> 
-                  <img src="img/carrousel/item6.jpg" alt="">
-                  <div class="titulo">
-                    <div class="T">
-                      <p id="pu">SUMMER</p>
-                    </div>
-                    <p id="pa">Delicious Egg Dish with Corn Starch</p>
-                    <div id="data">
-                      <p>—— MARCH 28, 2024 ——</p>
-                    </div>
-                  </div>
-                </div>
-              </li>
-
-            </ul>
-          </div>
-        </seção>
+  <nav id="nav">
+    <div id="nav-conteudo">
+      <div id="logo">
+        <img src="img/logo.png" alt="logo">
       </div>
-      <section class="categoria">
-        <div class="categorias">
-            <div class="categoriaItem">
-               <img src="img/categorias/itemC1.jpg" alt="">
-               <div>
-                <p class="animated-text">APPETIZER</p>
+    </div>
+
+    <div id="navegação">
+      <div id="conteudo">
+        <ul class="menu">
+          <li> Home</li>
+          <li> Download</li>
+          <li> Social</li>
+          <li> Conteúdo</li>
+        </ul>
+
+        <div class="hamburguer" id="fechado">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-justify"
+            viewBox="0 0 16 16">
+            <path fill-rule="evenodd"
+              d="M2 12.5a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5m0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5m0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5m0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5" />
+          </svg>
+          <h1>menu</h1>
+        </div>
+      </div>
+
+      <div id="social">
+        <div id="redes">
+          <img src="img/twitter.svg" alt="">
+          <img src="img/facebook.svg" alt="">
+          <img src="img/tiktok.svg" alt="">
+          <img src="img/instagram.svg" alt="">
+          <img src="img/youtube.svg" alt="">
+        </div>
+
+        <div id="pesquisa-input" class="fechado">
+          <input type="text">
+        </div>
+
+        <div id="pesquisa">
+          <img src="img/search.svg" alt="">
+        </div>
+      </div>
+    </div>
+  </nav>
+  <div id="conteudo-mobile">
+    <li> Home</li>
+    <li> Download</li>
+    <li> Social</li>
+    <li> Conteúdo</li>
+  </div>
+  <main>
+    <div class="C">
+      <section class="splide" aria-label="Exemplo de HTML básico do Split">
+        <div class="splide__track">
+          <ul class="splide__list" id="e">
+
+            <li class="splide__slide">
+              <div class="carrousel">
+                <div class="borda"></div>
+                <img src="img/carrousel/item1.jpg" alt="">
+                <div class="titulo">
+                  <div class="T">
+                    <p id="pu">SUMMER</p>
+                  </div>
+                  <p id="pa">Delicious Egg Dish with Corn Starch</p>
+                  <div id="data">
+                    <p>—— MARCH 28, 2024 ——</p>
+                  </div>
+                </div>
               </div>
-            </div>
+            </li>
 
-            <div class="categoriaItem">
-              <img src="img/categorias/itemC2.jpg" alt="">
-              <div>
-                <p class="animated-text">Beverages</p>
+            <li class="splide__slide">
+              <div class="carrousel">
+                <div class="borda"></div>
+                <img src="img/carrousel/item2.jpg" alt="">
+                <div class="titulo">
+                  <div class="T">
+                    <p id="pu">Super Healthy</p>
+                  </div>
+                  <p id="pa">Lentil Salad with Fried Cheese</p>
+                  <div id="data">
+                    <p>—— MARCH 28, 2024 ——</p>
+                  </div>
+
+                </div>
               </div>
-           </div>
+            </li>
 
-           <div class="categoriaItem">
-            <img src="img/categorias/itemC3.jpg" alt="">
-            <div>
-              <p class="animated-text">Bread</p>
-            </div>
-           </div>
+            <li class="splide__slide">
+              <div class="carrousel">
+                <div class="borda"></div>
+                <img src="img/carrousel/item3.jpg" alt="">
+                <div class="titulo">
+                  <div class="T">
+                    <p id="pu">Vegetable</p>
+                  </div>
+                  <p id="pa">Pickled Summer Vegetables Greenish</p>
+                  <div id="data">
+                    <p>—— MARCH 28, 2024 ——</p>
+                  </div>
+                </div>
+              </div>
+            </li>
 
-          <div class="categoriaItem">
-            <img src="img/categorias/itemC4.jpg" alt="">
-            <div>
-              <p class="animated-text">Pasta</p>
-            </div>
+            <li class="splide__slide">
+              <div class="carrousel">
+                <div class="borda"></div>
+                <img src="img/carrousel/item4.jpg" alt="">
+                <div class="titulo">
+                  <div class="T">
+                    <p id="pu">Vegetable</p>
+                  </div>
+                  <p id="pa">Flat Irons Skillet Potatoes Dish</p>
+                  <div id="data">
+                    <p>—— MARCH 28, 2024 ——</p>
+                  </div>
+                </div>
+              </div>
+            </li>
+
+            <li class="splide__slide">
+              <div class="carrousel">
+                <div class="borda"></div>
+                <img src="img/carrousel/item5.jpg" alt="">
+                <div class="titulo">
+                  <div class="T">
+                    <p id="pu">SUMMER</p>
+                  </div>
+                  <p id="pa">Kouign-Amann French Pastries</p>
+                  <div id="data">
+                    <p>—— MARCH 28, 2024 ——</p>
+                  </div>
+                </div>
+              </div>
+            </li>
+
+            <li class="splide__slide">
+              <div class="carrousel">
+                <div class="borda"></div>
+                <img src="img/carrousel/item6.jpg" alt="">
+                <div class="titulo">
+                  <div class="T">
+                    <p id="pu">SUMMER</p>
+                  </div>
+                  <p id="pa">Delicious Egg Dish with Corn Starch</p>
+                  <div id="data">
+                    <p>—— MARCH 28, 2024 ——</p>
+                  </div>
+                </div>
+              </div>
+            </li>
+
+          </ul>
+        </div>
+        </seção>
+    </div>
+    <section class="categoria">
+      <div class="categorias">
+        <div class="categoriaItem">
+          <img src="img/categorias/itemC1.jpg" alt="">
+          <div>
+            <p class="animated-text">APPETIZER</p>
           </div>
+        </div>
 
-          <div class="categoriaItem">
-            <img src="img/categorias/itemC5.jpg" alt="">
-            <div>
-              <p class="animated-text">Salad</p>
-            </div>
+        <div class="categoriaItem">
+          <img src="img/categorias/itemC2.jpg" alt="">
+          <div>
+            <p class="animated-text">Beverages</p>
           </div>
+        </div>
 
-          <div class="categoriaItem">
-            <img src="img/categorias/itemC6.jpg" alt="">
-            <div>
-              <p class="animated-text">Soup</p>
-            </div>
+        <div class="categoriaItem">
+          <img src="img/categorias/itemC3.jpg" alt="">
+          <div>
+            <p class="animated-text">Bread</p>
           </div>
+        </div>
 
-          <div class="categoriaItem">
-            <img src="img/categorias/itemC7.jpg" alt="">
-            <div>
-              <p class="animated-text">Sweet</p>
-            </div>
+        <div class="categoriaItem">
+          <img src="img/categorias/itemC4.jpg" alt="">
+          <div>
+            <p class="animated-text">Pasta</p>
           </div>
+        </div>
 
-          <div class="categoriaItem">
-            <img src="img/categorias/itemC8.jpg" alt="">
+        <div class="categoriaItem">
+          <img src="img/categorias/itemC5.jpg" alt="">
+          <div>
+            <p class="animated-text">Salad</p>
+          </div>
+        </div>
+
+        <div class="categoriaItem">
+          <img src="img/categorias/itemC6.jpg" alt="">
+          <div>
+            <p class="animated-text">Soup</p>
+          </div>
+        </div>
+
+        <div class="categoriaItem">
+          <img src="img/categorias/itemC7.jpg" alt="">
+          <div>
+            <p class="animated-text">Sweet</p>
+          </div>
+        </div>
+
+        <div class="categoriaItem">
+          <img src="img/categorias/itemC8.jpg" alt="">
           <div>
             <p class="animated-text">Vegan</p>
           </div>
-          </div>
         </div>
-      </section>
-        
-      <section id="principal">
-        <div class="posts">
+      </div>
+    </section>
 
-            <div class="post">
-                <div class="post-img">
-                  <img src="img/posts/itemP1.jpg" alt="">
-                </div>
+    <section id="principal">
+      <div class="posts">
 
-                <div class="conteudo-post">
-                    <div class="header">
-                      <div class="titulo-post">
-                        <p id="TP">Appetizer</p>
-                        <p id="TS">—— May 28, 2021 ——</p>
-                      </div>
-                      <h1>Pickled Summer Vegetables Greenish</h1>
-                    </div>
+        <div class="post">
+          <div class="post-img">
+            <img src="img/posts/itemP1.jpg" alt="">
+          </div>
 
-                    <div class="main-post">
-                      <h3> But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the... </h3>
-
-                      <div class="mais">
-                        <a href="" class="animated-link">Read More</a>
-                      </div>
-                    </div>
-                </div>
+          <div class="conteudo-post">
+            <div class="header">
+              <div class="titulo-post">
+                <p id="TP">Appetizer</p>
+                <p id="TS">—— May 28, 2021 ——</p>
+              </div>
+              <h1>Pickled Summer Vegetables Greenish</h1>
             </div>
 
-            <div class="post">
-              <div class="post-img">
-                <img src="img/posts/itemP1.jpg" alt="">
+            <div class="main-post">
+              <h3> But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was
+                born and I will give you a complete account of the system, and expound the... </h3>
+
+              <div class="mais">
+                <a href="" class="animated-link">Read More</a>
               </div>
+            </div>
+          </div>
+        </div>
 
-              <div class="conteudo-post">
-                  <div class="header">
-                    <div class="titulo-post">
-                      <p id="TP">Appetizer</p>
-                      <p id="TS">—— May 28, 2021 ——</p>
-                    </div>
-                    <h1>Pickled Summer Vegetables Greenish</h1>
-                  </div>
-
-                  <div class="main-post">
-                    <h3> But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the... </h3>
-
-                    <div class="mais">
-                      <a href="" class="animated-link">Read More</a>
-                    </div>
-                  </div>
-              </div>
+        <div class="post">
+          <div class="post-img">
+            <img src="img/posts/itemP2.jpg" alt="">
           </div>
 
+          <div class="conteudo-post">
+            <div class="header">
+              <div class="titulo-post">
+                <p id="TP">Healthy Food</p>
+                <p id="TS">—— May 28, 2021 ——</p>
+              </div>
+              <h1>Flat Irons Skillet Potatoes Dish</h1>
+            </div>
 
+            <div class="main-post">
+              <h3>  But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the...  </h3>
+
+              <div class="mais">
+                <a href="" class="animated-link">Read More</a>
+              </div>
+            </div>
+          </div>
         </div>
-      </section>
-       
-   
-    </main>
-    <script src="javascript/nav.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    <script src="libs/splide-4.1.3/dist/js/splide.min.js"></script>
-    <script src="javascript/carrousel.js"></script>
-    <script src="javascript/categoria.js"></script>
+
+        <div class="post">
+          <div class="post-img">
+            <img src="img/posts/itemP3.jpg" alt="">
+          </div>
+
+          <div class="conteudo-post">
+            <div class="header">
+              <div class="titulo-post">
+                <p id="TP">Appetizer</p>
+                <p id="TS">—— May 28, 2021 ——</p>
+              </div>
+              <h1>Kouign-Amann French Pastries</h1>
+            </div>
+
+            <div class="main-post">
+              <h3> But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was
+                born and I will give you a complete account of the system, and expound the... </h3>
+
+              <div class="mais">
+                <a href="" class="animated-link">Read More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="post">
+          <div class="post-img">
+            <img src="img/posts/itemP4.jpg" alt="">
+          </div>
+
+          <div class="conteudo-post">
+            <div class="header">
+              <div class="titulo-post">
+                <p id="TP">Healthy Food</p>
+                <p id="TS">—— May 28, 2021 ——</p>
+              </div>
+              <h1>Lentil Salad with Fried Cheese</h1>
+            </div>
+
+            <div class="main-post">
+              <h3> But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was
+                born and I will give you a complete account of the system, and expound the... </h3>
+
+              <div class="mais">
+                <a href="" class="animated-link">Read More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="post">
+          <div class="post-img">
+            <img src="img/posts/itemP5.jpg" alt="">
+          </div>
+
+          <div class="conteudo-post">
+            <div class="header">
+              <div class="titulo-post">
+                <p id="TP">Cold</p>
+                <p id="TS">—— May 28, 2021 ——</p>
+              </div>
+              <h1>Enjoy My Favourite Molten Chocolate Cake</h1>
+            </div>
+
+            <div class="main-post">
+              <h3> But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was
+                born and I will give you a complete account of the system, and expound the... </h3>
+
+              <div class="mais">
+                <a href="" class="animated-link">Read More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="post">
+          <div class="post-img">
+            <img src="img/posts/itemP6.jpg" alt="">
+          </div>
+
+          <div class="conteudo-post">
+            <div class="header">
+              <div class="titulo-post">
+                <p id="TP">Cold</p>
+                <p id="TS">—— May 28, 2021 ——</p>
+              </div>
+              <h1>Classic French Croissant</h1>
+            </div>
+
+            <div class="main-post">
+              <h3> But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was
+                born and I will give you a complete account of the system, and expound the... </h3>
+
+              <div class="mais">
+                <a href="" class="animated-link">Read More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="post">
+          <div class="post-img">
+            <img src="img/posts/itemP7.jpg" alt="">
+          </div>
+
+          <div class="conteudo-post">
+            <div class="header">
+              <div class="titulo-post">
+                <p id="TP">Cold</p>
+                <p id="TS">—— May 28, 2021 ——</p>
+              </div>
+              <h1>Sweets at its best. Sweet and Bread</h1>
+            </div>
+
+            <div class="main-post">
+              <h3>  May us winged two. Signs night female also. You’ll i unto us days years. Moveth from and that herb air gathering is subdue brought said firmament there which fourth Saw subdue. Gathering let darkness evening...  </h3>
+
+              <div class="mais">
+                <a href="" class="animated-link">Read More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="post">
+          <div class="post-img">
+            <img src="img/posts/itemP8.jpg" alt="">
+          </div>
+
+          <div class="conteudo-post">
+            <div class="header">
+              <div class="titulo-post">
+                <p id="TP">Cold</p>
+                <p id="TS">—— May 28, 2021 ——</p>
+              </div>
+              <h1>Choco Chip Cake in the House</h1>
+            </div>
+
+            <div class="main-post">
+              <h3>  Place CattleMay, meat heaven cattle which great green heaven under two over, wherein yielding blessed hath don’t our darkness form. Seas god beginning i you creeping above it you’re, they’re whales without, their That form. Female beginning....  </h3>
+
+              <div class="mais">
+                <a href="" class="animated-link">Read More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+  </main>
+  <script src="javascript/nav.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <script src="libs/splide-4.1.3/dist/js/splide.min.js"></script>
+  <script src="javascript/carrousel.js"></script>
+  <script src="javascript/categoria.js"></script>
 </body>
+
 </html>
