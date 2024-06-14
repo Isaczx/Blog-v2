@@ -656,6 +656,11 @@ nav{
     .conteudo-post {
         width: 100%
     }
+
+    .mais{
+        display: flex;
+        justify-content: center;
+    }
 }
 
 @media only screen and (max-width: 321px) {
