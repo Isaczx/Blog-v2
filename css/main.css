@@ -434,6 +434,7 @@ nav{
     font-size: 26px;
     margin-top: 10px;
     font-family: "Playfair Display", serif;
+    font-weight: bold;
 }
 
 .titulo-post{
@@ -653,6 +654,10 @@ nav{
         width: 100%;
     }
 
+    .header h1 {
+        font-size: 20px;
+    }
+
     .conteudo-post {
         width: 100%
     }
@@ -667,5 +672,19 @@ nav{
    
     .categorias {
         width: 80%;
+    }
+
+    .header h1 {
+        font-size: 15px;
+        font-weight: bold;
+    }
+
+    .main-post h3 {
+        font-size: 12px;
+    }
+
+    .titulo-post {
+     
+        font-size: 14px;
     }
 }
