@@ -645,6 +645,10 @@ nav{
         flex-direction: column;
     }
 
+    .titulo-post {
+        justify-content: space-evenly;
+    }
+
     .post-img {
         width: 100%;
     }
