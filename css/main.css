@@ -523,7 +523,8 @@ nav{
 #sidebar{
     width: 30%;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 
 .sobre-mim{
@@ -582,6 +583,54 @@ nav{
 
 .sobre-mim-assinatura img{
    width: 60%;
+}
+
+.siga{
+    width: 80%;
+}
+
+.contato{
+    margin-top: 20px;
+}
+.contato h2{
+    text-align: center;
+    font-weight: bold;
+    font:  bold 28px 'Open Sans', sans-serif;
+    font-size: 12px;
+    padding: 16px 5px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    outline-offset: -5px;
+    outline: 1px solid #fc4544;
+    margin-bottom: -5px;
+}
+
+.contato-redes{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 20px;
+    flex-direction: row;
+    
+}
+
+.contato-redes img{
+    width: 25px;
+    height: 25px;
+    border-radius: 100%;
+}
+
+.contato-redes a{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    border: 0.001px solid #a9a9a9;
+    border-radius: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.contato-redes a:hover{
+   filter: brightness(0.9);
 }
 @media only screen and (max-width: 1100px) {
     #conteudo{
@@ -667,6 +716,15 @@ nav{
     .posts{
         width: 100%;
     }
+
+    #principal {
+        flex-direction: column;
+    }
+
+    #sidebar {
+        width: 100%;
+        margin-top: 100px;
+    }
   
 }
 
@@ -736,6 +794,14 @@ nav{
     .mais{
         display: flex;
         justify-content: center;
+    }
+
+    .siga {
+        width: 100%;
+    }
+
+    .sobre-mim {
+        width: 100%;
     }
 }
 
