@@ -813,6 +813,10 @@ footer{
         font-weight: bold;
     }
 
+    #redes{
+        display: none;
+    }
+
     #social{
         margin-left: 0%;
     }
