@@ -53,7 +53,7 @@ nav{
     width: 100%;
     height: 50px;
     background-color: white;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    
 }
 
 #conteudo{
@@ -85,6 +85,10 @@ nav{
     color: red;
 }
 
+.menu-fixed{
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
 #social{
     width: 200px;
     height: 50px;
@@ -108,20 +112,77 @@ nav{
     cursor: pointer;
 }
 
-#pesquisa{
-    display: flex;
-    align-items: center;
+.ui-input-container {
+    position: relative;
+    width: 300px;
+  }
+  
+  .ui-input {
+    font: normal normal 1rem 'Playfair Display', sans-serif;
+    width: 100%;
+    padding: 10px 10px 10px 40px;
+    font-size: 1em;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    outline: none;
+    background-color: transparent;
+    transition: border-color 0.3s;
     
-}
-
-#pesquisa img{
+  }
+  
+  .ui-input:focus {
+    border-color: red;
+  }
+  
+  .ui-input-underline {
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    height: 0px;
+    width: 100%;
+    background-color: red;
+    transform: scaleX(0);
+    transition: transform 0.3s;
+  }
+  
+  .ui-input:focus + .ui-input-underline {
+    transform: scaleX(1);
+  }
+  
+  .ui-input-highlight {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    background-color: rgba(108, 99, 255, 0.1);
+    transition: width 0.3s;
+  }
+  
+  .ui-input:focus ~ .ui-input-highlight {
+    width: 100%;
+  }
+  
+  .ui-input-icon {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #999;
+    transition: color 0.3s;
+  }
+  
+  .ui-input:focus ~ .ui-input-icon {
+    color: red;
+  }
+  
+  .ui-input-icon svg {
     width: 20px;
-}
-
-#pesquisa:hover{
-    cursor: pointer;
-}
-
+    height: 20px;
+  }
+  
+  
+  
 
 .menu-fixed {
     position: fixed;
@@ -565,8 +626,8 @@ nav{
 
 .sobre-mim-text{
     margin-top: 15px;
-    text-align: center;font: normal normal 28px 'Playfair Display', sans-serif;
-    
+    text-align: center;
+    font: normal normal 28px 'Playfair Display', sans-serif; 
 }
 
 .sobre-mim-text h3{
@@ -719,6 +780,11 @@ footer{
     flex-direction: column;
     align-items: center;
     box-shadow: 5px 4px 6px 5px rgba(0, 0, 0, 0.1);
+}
+
+#footer{
+    box-shadow: 0 -5px 6px rgba(0, 0, 0, 0.1); /* Adiciona a sombra */
+    width: 100%;
 }
 
 .creditos{

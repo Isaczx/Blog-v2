@@ -5,6 +5,7 @@ const inputL = document.querySelector("#pesquisa-input");
 const redes = document.querySelector("#redes");
 const nav = document.querySelector("#nav");
 const social = document.querySelector("#social");
+const navegação = document.querySelector(".menu-fixed");
 
 menu.addEventListener("click" ,() =>{
 
