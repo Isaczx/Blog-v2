@@ -54,6 +54,7 @@ nav{
     height: 50px;
     background-color: white;
     justify-content: space-evenly;
+    z-index: 100000;
 }
 
 #conteudo{
@@ -870,7 +871,7 @@ footer{
     #navegação{
         width: 100%;
         justify-content: space-around;
-        z-index: 10;
+       
     }
 
     .menu{
@@ -906,7 +907,7 @@ footer{
     }
 
    .splide__arrow--next{
-    left: 80vw;
+        left: 93vw;
    }
     .categorias {
         width: 71%;
@@ -966,6 +967,14 @@ footer{
         margin: 0;
         font-weight: bold;
     }
+
+    .splide__arrow--prev {
+        left: 2vw;
+    }
+
+    .splide__arrow--next{
+        left: 87vw;
+   }
 
     #conteudo {
         width: 150px;
@@ -1029,4 +1038,12 @@ footer{
      
         font-size: 14px;
     }
+
+    .splide__arrow--prev {
+        left: 2vw;
+    }
+
+    .splide__arrow--next{
+        left: 83vw;
+   }
 }
