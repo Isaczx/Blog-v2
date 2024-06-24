@@ -2,8 +2,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 
 
+:root {
+    --primary-color: red;
+    --secondary-color: #2ecc71;
+    --text-color: #000;
+    --background-color: white;
+    --text-shadow-color: rgba(0, 0, 0, 0.7);
+}
+
 body{
-    background-color: white;
+    background-color: var(--background-color);
     font-family: 'Open Sans', Arial, sans-serif;
 }
 
@@ -22,11 +30,11 @@ nav{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: white;
+    background-color:var(--background-color);
 }
 
 #nav-conteudo{
-    background-color: white;
+    background-color:var(--background-color);
     width: 30%;
     height: 100%;
    
@@ -52,7 +60,7 @@ nav{
     display: flex;
     width: 100%;
     height: 50px;
-    background-color: white;
+    background-color:var(--background-color);
     justify-content: space-evenly;
     z-index: 100000;
 }
@@ -75,7 +83,7 @@ nav{
     font-weight: bolder;
     font-size: 13px;
     text-transform: uppercase;
-    color: #000;
+    color: var(--text-color);
     margin: 0px;
     padding: 0;
     align-items: center;
@@ -83,7 +91,7 @@ nav{
 
 .menu li:hover {
     cursor: pointer;
-    color: red;
+    color: var(--primary-color);
 }
 
 .menu-fixed{
@@ -132,7 +140,7 @@ nav{
   }
   
   .ui-input:focus {
-    border-color: red;
+    border-color: var(--primary-color);
   }
   
   .ui-input-underline {
@@ -141,7 +149,7 @@ nav{
     left: 0;
     height: 0px;
     width: 100%;
-    background-color: red;
+    background-color: var(--primary-color);
     transform: scaleX(0);
     transition: transform 0.3s;
   }
@@ -174,7 +182,7 @@ nav{
   }
   
   .ui-input:focus ~ .ui-input-icon {
-    color: red;
+    color: var(--primary-color);
   }
   
   .ui-input-icon svg {
@@ -205,7 +213,7 @@ nav{
     display: none;
     z-index: 1000;
     color: #000;
-    background-color: #fff;
+    background-color: var(--background-color);
     list-style: none;
     width: 100%;
     height: 30px;
@@ -229,14 +237,14 @@ nav{
     font-size: 16px; /* Tamanho da fonte */
     border: 2px solid #e0e0e0; /* Cor da borda */
     border-radius: 25px; /* Bordas arredondadas */
-    background-color: #ffffff; /* Fundo branco */
+    background-color:var(--background-color); /* Fundo branco */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra leve */
     outline: none; /* Remove o contorno padrão */
     transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Transições suaves */
 }
 
 #pesquisa-input input[type="text"]:focus {
-    border-color: #FC4544; /* Cor da borda ao focar */
+    border-color: var(--primary-color); /* Cor da borda ao focar */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra mais pronunciada ao focar */
 }
 
@@ -285,7 +293,7 @@ nav{
     top: 70%;
     transition: top 0.2s ease;
     z-index: 1;
-    color: white;
+    color: var(--background-color);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -296,7 +304,7 @@ nav{
 
 .T{
     background-color: antiquewhite;
-    color: #FC4544;
+    color: var(--primary-color);
     border-radius: 4px;
     font: normal normal 16px 'Playfair Display', sans-serif;
     font-weight: 600;
@@ -306,14 +314,15 @@ nav{
     font: normal normal 20px 'Playfair Display', sans-serif;
     text-align: center;
     width: 80%;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 2)
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7); /* sombra do texto */
+    font-weight: 600; 
 
 
 }
 
 #pa p {
     box-shadow: 1000px 10px 5px 5px #000;
-    color: #FC4544;
+    color: var(--primary-color);
 }
 
 #pu {
@@ -398,7 +407,7 @@ nav{
     flex-direction: column;
     text-align: center;
     gap: 10px;
-    color: #333333;
+    color: var(--text-color);
     text-transform: uppercase;
     font-family: "Playfair Display", serif;
     font-size: small;
@@ -408,7 +417,7 @@ nav{
 
 .categoriaItem:hover{
     cursor: pointer;
-    color: red;
+    color: var(--primary-color);
    
 }
 
@@ -433,7 +442,7 @@ nav{
     bottom: 0;
     width: 0;
     height: 1px;
-    background-color: red;
+    background-color: var(--primary-color);
     transition: width 0.3s ease-out;
     transform: translateX(-50%);
 }
@@ -515,7 +524,7 @@ nav{
 }
 
 #TP{
-    color: #fc4544;
+    color: var(--primary-color);
     letter-spacing: 1px;
     font-weight: 600;
 }
@@ -530,7 +539,7 @@ nav{
 .main-post h3{  
     font: normal normal 28px 'Open Sans', sans-serif;
     font-size: 15px;
-    color: #222;
+    color: var(--text-color);
     font-weight: 400;
     line-height: 1.6;
     padding: 0px 0 10px 0px;
@@ -542,7 +551,7 @@ nav{
     text-transform: uppercase;
     font: normal normal 28px 'Playfair Display', sans-serif;
     font-weight: 700;
-    color: #111;
+    color: var(--text-color);
     letter-spacing: 2px;
     font-size: 13px;
 }
@@ -551,7 +560,7 @@ nav{
     position: relative;
     display: inline-block;
     text-decoration: none;
-    color: black; /* Cor do texto do link */
+    color: var(--text-color); /* Cor do texto do link */
     font-size: 24px; /* Tamanho do texto do link */
     font-weight: bold; /* Peso do texto do link */
 }
@@ -563,7 +572,7 @@ nav{
     bottom: -5px; /* Posição da linha abaixo do texto */
     width: 50%;
     height: 1px;
-    background-color: red; /* Cor da linha */
+    background-color:var(--primary-color); /* Cor da linha */
     transition: width 0.5s ease-out, left 0.2s ease-out; /* Transição suave da largura e posição da linha */
     transform: translateX(-50%); /* Centraliza a linha horizontalmente */
 }
@@ -580,7 +589,7 @@ nav{
     justify-content: center;
     font-weight: bold;
     gap: 30px;
-    color: #000;
+    color: var(--text-color);
     font: normal normal 'Open Sans', sans-serif;
 }
 
@@ -703,6 +712,7 @@ nav{
 
 .popular-posts{
     margin-top: 70px;
+    width: 80%;
 }
 
 .popular-itens{
@@ -741,11 +751,12 @@ nav{
     text-transform: capitalize;
     padding: 15px 8px;
     width: 75%;
-    color: #000;
+    color: var(--text-color);
     font-weight: bold;
     z-index: 1;
     position: inherit;
     display: flex;
+    
 }
 
 #popular-text p{
@@ -766,26 +777,27 @@ nav{
     font-size: 60px;
     font-weight: bold;
     font-style: italic;
-    color: red;
+    color: var(--primary-color);
     transition: 400ms;
 }
 
 .anuncios{
     margin-top: 50PX;
-
-    height: 49%;
-    width: 100%;
+    height: 70%;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .anúncio{
-    margin-top: 10px;
     background-color: coral;
-    height: 100%;
+    height: 23%;
     width: 100%;
 }
 
 footer{
-    background-color: #000;
+    background-color:var(--text-color);
     width: 100%;
     height: 120px;
     margin-top: 50px;
@@ -812,7 +824,7 @@ footer{
 .creditos h1{
     font: normal normal 28px 'Playfair Display', sans-serif;
     font-size: 12px;
-    color: white;
+    color: var(--background-color);
     float: none;
     text-align: center;
     text-transform: uppercase;
@@ -825,10 +837,10 @@ footer{
 }
 
 .creditos a{
-    color: red;
+    color: var(--primary-color);
     text-decoration: none;
 }
-@media only screen and (max-width: 1100px) {
+@media only screen and (max-width: 1230px) {
     #conteudo{
         width: 471px;
     }
@@ -862,7 +874,8 @@ footer{
     }
 }
 
-@media only screen and (max-width: 800px) {
+
+@media only screen and (max-width: 829px) {
     nav{
         flex-direction: column;
         height: 130px;
@@ -933,7 +946,7 @@ footer{
   
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 750px) {
     #nav-conteudo{
         width: 100%;
     }
