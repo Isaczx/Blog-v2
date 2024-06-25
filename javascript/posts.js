@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         post.addEventListener("mouseenter", () => {
             linkAnimado.classList.add("hover");
-            linkAnimado.style.color = "red";
+            linkAnimado.style.color = "#F56D91";
         });
 
         post.addEventListener("mouseleave", () => {
