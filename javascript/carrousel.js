@@ -4,11 +4,17 @@ var splide = new Splide( '.splide', {
     perPage: 4,
     perMove: 1,
     breakpoints: {
+      2600: {
+        perPage: 6,
+      },
+      1600: {
+        perPage: 4,
+      },
       1200: {
           perPage: 3,
       },
       768: {
-          perPage: 3,
+          perPage: 2,
       },
       480: {
           perPage: 1,
