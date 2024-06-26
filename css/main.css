@@ -793,7 +793,7 @@ nav{
 }
 
 .anúncio{
-    background-color: coral;
+    background-color: var(--primary-color);
     height: 23%;
     width: 100%;
 }
