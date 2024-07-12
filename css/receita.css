@@ -5,8 +5,11 @@
     --text-color: #000000;
     --background-color: #F7F5F2;
     --text-shadow-color:  1px 1px 2px #000000;
+    --text-cinza:#6a6359;
 }
-
+em{
+    color: var(--primary-color);
+}
 main{
     display: flex;
     flex-direction: row;
@@ -258,3 +261,49 @@ hr{
 
 
   
+#relacionados{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+
+#R{
+    width: 90%;
+}
+
+.relacionados-itens{
+    display: flex;
+    flex-direction: row;
+    width: 89%;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.relacionados-item{
+    width: 240px;
+    height: 290px;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.relacionados-item:hover{
+    color: var(--primary-color);
+}
+
+.relacionados-item img{
+    width: 240px;
+    height: 240px;
+}
+
+.relacionados-item p{
+    font-size: 14px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    text-align: center;
+    color: var(--text-cinza);
+    font: normal normal  'Playfair Display', sans-serif;
+    
+}

@@ -13,5 +13,9 @@ document.addEventListener("DOMContentLoaded", () => {
             linkAnimado.classList.remove("hover");
             linkAnimado.style.color = "";
         });
+
+        post.addEventListener("click", ()=>{
+            window.location.href = "pages/receita.html"
+        })
     });
 });

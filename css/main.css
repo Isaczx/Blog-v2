@@ -89,6 +89,11 @@ nav{
     align-items: center;
 }
 
+.menu li a{
+    text-decoration: none;
+    color: var(--text-color);
+}
+
 .menu li:hover {
     cursor: pointer;
     color: var(--primary-color);
