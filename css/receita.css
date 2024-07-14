@@ -307,3 +307,84 @@ hr{
     font: normal normal  'Playfair Display', sans-serif;
     
 }
+
+@media only screen and (max-width: 1230px) {
+   
+  
+    .lista-ingredientes ul {
+        flex-wrap: nowrap;
+        height: 100%;
+    }
+
+    #popular-text {
+        padding: 15px 22px;
+    }
+
+    .relacionados-itens {
+        justify-content: space-evenly;
+    }
+
+    .relacionados-item {
+        width: 200px;
+    }
+
+    .relacionados-item img {
+        width: 195px;
+        height: 220px;
+    }
+}
+
+
+@media only screen and (max-width: 800px) {
+    main{
+        flex-direction: column;
+        
+    }
+
+    .receita {
+        width: 100%;
+    } 
+
+}
+
+
+
+
+    @media only screen and (max-width: 450px) {
+
+        .receita-introdução {
+            margin: 2rem 1rem;
+        }
+
+        .receita {
+            margin:  0;
+        }
+
+        .receita-ingredientes h1 {
+            font-size: 25px;
+        }
+
+        .receita-categorias {
+            width: 80%;
+        }
+
+        .relacionados-itens {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+
+
+    @media only screen and (max-width: 400px) {
+        .receita-preparo h3{
+            font-size: larger;
+        }
+
+        .receita-ingredientes h1 {
+            font-size: 20px;
+        }
+
+        .receita-categorias {
+            width: 83%;
+        }
+    }
